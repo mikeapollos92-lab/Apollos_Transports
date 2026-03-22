@@ -3,17 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apollos Transport Services</title>
+    <title>Professional Transport Company</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Apollos Transport Services</h1>
+        <section class="hero">
+            <h1>Welcome to Our Professional Transport Services</h1>
+            <p>Your comfort is our priority.</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </section>
     </header>
     <main>
-        <p>Your reliable partner in transportation solutions.</p>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Luxury Car Rentals</h3>
+                    <p>Experience luxury with our exclusive car rentals.</p>
+                </div>
+                <div class="service">
+                    <h3>Airport Transfers</h3>
+                    <p>Timely and reliable transport to and from the airport.</p>
+                </div>
+                <div class="service">
+                    <h3>Corporate Transport</h3>
+                    <p>Professional transport solutions for your business needs.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Amazing service! Highly recommend for corporate events." - John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"The best transport company I've ever used!" - Jane Smith</p>
+            </div>
+        </section>
+        <section class="booking" id="booking">
+            <h2>Book Your Ride</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="car_rental">Luxury Car Rental</option>
+                    <option value="airport_transfer">Airport Transfer</option>
+                    <option value="corporate_transport">Corporate Transport</option>
+                </select>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2026 Apollos Transport Services. All rights reserved.</p>
+        <p>Contact Us: <a href="mailto:info@transportcompany.com">info@transportcompany.com</a></p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
